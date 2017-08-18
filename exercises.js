@@ -56,8 +56,8 @@ var stringCount = function(str){
  * @param {String}
  * @return {Number}
  */
-var arrayLength = function(){
-
+var arrayLength = function(str){
+  return str.length;
 };
 
 

@@ -8,10 +8,10 @@
 var doubleArray = function(arr) {
   var result = [];
   for (var i = 0; i < arr.length; i++) {
-    result.push(arr[i] * 2) 
+    result.push(arr[i] * 2) ;
   }
-  return result
-}
+  return result;
+};
 
 /* #sumArrays
  *
@@ -21,7 +21,15 @@ var doubleArray = function(arr) {
  * @param {Array}
  * @return {Bool}
  */
-var sumArrays;
+
+ var sumArrays = function(Array1,Array2){
+  
+  for(i = 0; i<Array1.length; i++){
+       var sum = Sum(Array1 + Array2);
+    return sum;
+  } 
+    
+};
 
 /* #stringCount
  *
@@ -30,7 +38,15 @@ var sumArrays;
  * @param {String}
  * @return {Number}
  */
-var stringCount;
+var stringCount = function(str){
+  if(typeof str !== 'string'){
+    return null;
+  }else{
+    return str.length;
+  }
+};
+
+
 
 /* #arrayLength
  *
@@ -39,7 +55,11 @@ var stringCount;
  * @param {String}
  * @return {Number}
  */
-var arrayLength;
+var arrayLength = function(){
+
+};
+
+
 
 /* #countAll
  *
@@ -50,6 +70,8 @@ var arrayLength;
  */
 var countAll;
 
+
+
 /* #countStrings
  *
  * Takes in an array of strings and returns an array of string lengths.
@@ -58,6 +80,8 @@ var countAll;
  * @return {Array}
  */
 var countStrings;
+
+
 
 /* #countAllStrings
  *
@@ -68,6 +92,8 @@ var countStrings;
  */
 var countAllStrings;
 
+
+
 /* #convertToArray
  *
  * Takes in an object and returns all the values of the object in an array.
@@ -76,6 +102,8 @@ var countAllStrings;
  * @return {Array}
  */
 var convertToArray;
+
+
 
 /* #objectSize
  *
@@ -86,6 +114,8 @@ var convertToArray;
  */
 var objectSize;
 
+
+
 /* #createZeroFilledArray
  *
  * Takes in a number and fills an array with that number of zeroes.
@@ -94,6 +124,8 @@ var objectSize;
  * @return {Zero}
  */
 var createZeroFilledArray;
+
+
 
 /* #poppedArray
  *
@@ -104,6 +136,8 @@ var createZeroFilledArray;
  */
 var poppedArray;
 
+
+
 /* #splitString
  *
  * Takes in a string and returns an array of each individual character in the string.
@@ -112,6 +146,8 @@ var poppedArray;
  * @return {Array}
  */
 var splitString;
+
+
 
 /* #lengthOfLast
  *
@@ -122,6 +158,8 @@ var splitString;
  */
 var lengthOfLast;
 
+
+
 /* #sumBelowTen
  *
  * Takes in an array of numbers and returns the sum of all numbers below 10.
@@ -130,6 +168,8 @@ var lengthOfLast;
  * @return {Number}
  */
 var sumBelowTen;
+
+
 
 /* #moreThanTenLetters
  *
@@ -140,6 +180,8 @@ var sumBelowTen;
  */
 var moreThanTenLetters;
 
+
+
 /* #multiplyAll
  *
  * Takes in an array of numbers and returns the product of all elements.
@@ -148,6 +190,8 @@ var moreThanTenLetters;
  * @return {Number}
  */
 var multiplyAll;
+
+
 
 /* #getKeys
  *
@@ -167,6 +211,8 @@ var getKeys;
  */
 var sumAllPositive;
 
+
+
 /* #stringCountBelowThree
  *
  * Takes in an array of strings and returns the amount of strings that have three characters or less.
@@ -176,6 +222,8 @@ var sumAllPositive;
  */
 var stringCountBelowThree;
 
+
+
 /* #countObjects
  *
  * Takes in an array of objects and returns the amount of objects in the array.
@@ -183,7 +231,10 @@ var stringCountBelowThree;
  * @param {Array}
  * @return {Number}
  */
+
 var countObjects;
+
+
 
 /* #getObjectKeys
  *
@@ -194,6 +245,8 @@ var countObjects;
  */
 var getObjectKeys;
 
+
+
 /* #getObjectValues
  *
  * Takes in an object and returns an array of all the object's values.
@@ -202,6 +255,8 @@ var getObjectKeys;
  * @return {Array}
  */
 var getObjectValues;
+
+
 
 /* #makeObject
  *
@@ -213,6 +268,8 @@ var getObjectValues;
  */
 var makeObject;
 
+
+
 /* #makeObjectReverse
  *
  * Takes in two arguments 'value' and 'key' and returns a single key-value pair in an object.
@@ -223,6 +280,8 @@ var makeObject;
  */
 var makeObjectReverse;
 
+
+
 /* #tupleToObject
  *
  * Takes in a tuple (an array with two elements) and returns it into a single key-value pair in an object.
@@ -231,6 +290,8 @@ var makeObjectReverse;
  * @return {Object}
  */
 var tupleToObject;
+
+
 
 /* #tupleToObjectReverse
  *
@@ -241,6 +302,8 @@ var tupleToObject;
  */
 var tupleToObjectReverse;
 
+
+
 /* #strToKeys
  *
  * Takes in an array of strings and returns an object with all string elements as the object's keys and all values set to 0.
@@ -249,6 +312,8 @@ var tupleToObjectReverse;
  * @return {Object}
  */
 var strToKeys;
+
+
 
 /* #getValues
  *
@@ -259,6 +324,8 @@ var strToKeys;
  */
 var getValues;
 
+
+
 /* #getKeys
  *
  * Takes in an object and returns an array of the object's keys.
@@ -267,6 +334,8 @@ var getValues;
  * @return {Array}
  */
 var getKeys;
+
+
 
 /* #objectToArray
  *
@@ -278,6 +347,8 @@ var getKeys;
  */
 var objectToArray;
 
+
+
 /* #arrayToObject
  *
  * takes in an array and returns an object with keys set to the elements in the array and
@@ -287,6 +358,8 @@ var objectToArray;
  * @return {Object}
  */
 var arrayToObject;
+
+
 
 /* #arraysToObject
  *
@@ -299,6 +372,8 @@ var arrayToObject;
  */
 var arraysToObject;
 
+
+
 /* #objectsToTuples
  *
  * takes in two objects and returns an array of tuples of the key value pairs of all objects in both arrays.
@@ -309,6 +384,8 @@ var arraysToObject;
  */
 var objectsToTuples;
 
+
+
 /* #mapArrayValues
  *
  * takes in an array of strings and returns an object with keys of the array elements and values all set to True.
@@ -317,6 +394,8 @@ var objectsToTuples;
  * @return {Object}
  */
 var mapArrayValues;
+
+
 
 /* #mapStringCounts
  *
@@ -329,6 +408,8 @@ var mapArrayValues;
  */
 var mapStringCounts;
 
+
+
 /* #arrayToObjectNums
  *
  * takes in an array of numbers and returns an object with keys set to 
@@ -339,6 +420,8 @@ var mapStringCounts;
  */
 var arrayToObjectNums;
 
+
+
 /* #stringToKeys
  *
  * takes in a string and returns an object whos keys are each letter of the string and all values set to true.
@@ -347,6 +430,8 @@ var arrayToObjectNums;
  * @return {Object}
  */
 var stringToKeys;
+
+
 
 /* #charCountMap
  *
@@ -358,6 +443,8 @@ var stringToKeys;
  */
 var charCountMap;
 
+
+
 /* #frequencyMap
  *
  * takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.
@@ -366,6 +453,8 @@ var charCountMap;
  * @return {Bool}
  */
 var frequencyMap;
+
+
 
 /* #tupleConvertToObject
  *
@@ -378,10 +467,12 @@ var frequencyMap;
 var tupleConvertToObject;
 
 
+
+
 module.exports = {
-  doubleArray: null,
-  sumArrays: null, 
-  stringCount: null,
+  doubleArray: doubleArray,
+  sumArrays: sumArrays, 
+  stringCount: stringCount,
   arrayLength: null,
   countAll: null,
   countStrings: null,
@@ -419,4 +510,6 @@ module.exports = {
   charCountMap: null,
   frequencyMap: null,
   tupleConvertToObject: null
-}
+};
+
+

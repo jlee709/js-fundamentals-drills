@@ -231,7 +231,16 @@ var sumBelowTen = function(arry){
  * @param {String}
  * @return {Number}
  */
-var moreThanTenLetters;
+var moreThanTenLetters = function(str){
+  
+  var countTen = 0;
+
+  for( var i=0; i < str.length; i++){
+    if (str[i].length > 10){
+      countTen += 1;
+    }
+  } return countTen;
+};
 
 
 

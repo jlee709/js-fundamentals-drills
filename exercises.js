@@ -166,10 +166,10 @@ var createZeroFilledArray = function(num){
  */
 
  
-// var poppedArray = function(arry){
-//   arry.pop();
-//   return arry;
-// };
+var poppedArray = function(arry){
+  arry.pop();
+  return arry;
+};
 
 
 

@@ -210,7 +210,17 @@ var lengthOfLast = function(str){
  * @param {Array}
  * @return {Number}
  */
-var sumBelowTen;
+var sumBelowTen = function(arry){
+  sumNum = 0;
+
+  for(i=0; i<arry.length; i++){
+    
+    if(arry[i]<10){
+      
+      sumNum += arry[i];
+    }
+  }return sumNum;
+};
 
 
 

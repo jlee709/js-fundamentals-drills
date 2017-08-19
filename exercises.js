@@ -105,10 +105,10 @@ var countStrings = function(arry){
  * @param {String}
  * @return {Number}
  */
-var countAllStrings = function(arr) {
+// var countAllStrings = function(arr) {
 
-  return(countAll(countStrings(arr)));
-};
+//   return(countAll(countStrings(arr)));
+// };
 
 
 
@@ -120,10 +120,10 @@ var countAllStrings = function(arr) {
  * @return {Array}
  */
 
-  var convertToArray = function (obj) {
-  var converted = Object.values(obj);
-  return converted;
-  };
+  // var convertToArray = function (obj) {
+  // var converted = Object.values(obj);
+  // return converted;
+  // };
 
 
 
@@ -135,9 +135,9 @@ var countAllStrings = function(arr) {
  * @param {Object}
  * @return {Number}
  */
-var objectSize = function(obj){
-  return convertToArray(obj).length;
-};
+// var objectSize = function(obj){
+//   return convertToArray(obj).length;
+// };
 
 
 
@@ -148,12 +148,12 @@ var objectSize = function(obj){
  * @param {Number}
  * @return {Zero}
  */
-var createZeroFilledArray = function(num){
-  zeroArry = [];
-  for (i=0; i<num; i++){
-    zeroArry.push(0);
-  } return zeroArry;
-};
+// var createZeroFilledArray = function(num){
+//   zeroArry = [];
+//   for (i=0; i<num; i++){
+//     zeroArry.push(0);
+//   } return zeroArry;
+// };
 
 
 
@@ -164,10 +164,12 @@ var createZeroFilledArray = function(num){
  * @param {Array}
  * @return {Array}
  */
-var poppedArray = function(arry){
-  arry.pop();
-  return arry;
-};
+
+ 
+// var poppedArray = function(arry){
+//   arry.pop();
+//   return arry;
+// };
 
 
 
@@ -178,10 +180,11 @@ var poppedArray = function(arry){
  * @param {String}
  * @return {Array}
  */
-var splitString = function(str){
-  split = str.split('');
-  return split;
-};
+
+// var splitString = function(str){
+//   split = str.split('');
+//   return split;
+// };
 
 
 
@@ -192,10 +195,11 @@ var splitString = function(str){
  * @param {String}
  * @return {Number}
  */
-var lengthOfLast = function(str){
-  lastLength = str.pop().length;
-  return lastLength;
-};
+
+// var lengthOfLast = function(str){
+//   lastLength = str.pop().length;
+//   return lastLength;
+// };
 
 
 

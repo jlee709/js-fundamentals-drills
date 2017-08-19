@@ -120,10 +120,10 @@ var countAllStrings = function(arr) {
  * @return {Array}
  */
 
-  // var convertToArray = function (obj) {
-  // var converted = Object.values(obj);
-  // return converted;
-  // };
+  var convertToArray = function (obj) {
+  var converted = Object.values(obj);
+  return converted;
+  };
 
 
 
@@ -135,9 +135,9 @@ var countAllStrings = function(arr) {
  * @param {Object}
  * @return {Number}
  */
-// var objectSize = function(obj){
-//   return convertToArray(obj).length;
-// };
+var objectSize = function(obj){
+  return convertToArray(obj).length;
+};
 
 
 
@@ -148,12 +148,12 @@ var countAllStrings = function(arr) {
  * @param {Number}
  * @return {Zero}
  */
-// var createZeroFilledArray = function(num){
-//   zeroArry = [];
-//   for (i=0; i<num; i++){
-//     zeroArry.push(0);
-//   } return zeroArry;
-// };
+var createZeroFilledArray = function(num){
+  zeroArry = [];
+  for (i=0; i<num; i++){
+    zeroArry.push(0);
+  } return zeroArry;
+};
 
 
 

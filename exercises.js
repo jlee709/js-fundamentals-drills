@@ -519,8 +519,11 @@ var arrayToObject = function(arry){
  * @param {Array}
  * @return {Object}
  */
-var arraysToObject = function(){
-
+var arraysToObject = function(arry1,arry2){
+  var newObj = {};
+  for(var i=0; i<arry1.length; i++){
+    newObj[arry1[i]] = arry2[i];
+  } return newObj;
 };
 
 

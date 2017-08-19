@@ -410,7 +410,12 @@ var tupleToObject = function(arry){
  * @param {Array}
  * @return {Object}
  */
-var tupleToObjectReverse;
+var tupleToObjectReverse = function(arry){
+  var toop = {[arry[0]]:arry[1]};
+  var toopReversed = {[arry[1]]:arry[0]};
+
+  return toopReversed;
+};
 
 
 

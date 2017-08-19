@@ -657,12 +657,23 @@ var charCountMap = function(arry){
 
 /* #frequencyMap
  *
- * takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.
+ * takes in an array of strings and returns an object with the string as the key and the number of 
+  occurences as the value.
  *
  * @param {String}
  * @return {Bool}
  */
-var frequencyMap;
+var frequencyMap = function(str){
+  var mapOutput = {};
+  
+  for(var i = 0; i<str.length; i++){
+   mapOutput[str[i]] = (mapOutput[str[i]] || 0) + 1;
+    
+  }
+  return mapOutput;
+};
+
+
 
 
 

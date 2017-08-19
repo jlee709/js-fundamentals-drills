@@ -363,7 +363,10 @@ var getObjectValues = function(obj){
  * @param {String}
  * @return {Object}
  */
-var makeObject;
+var makeObject = function(key,value){
+  var obj = { [key]:value };
+  return obj;
+};
 
 
 
@@ -375,7 +378,13 @@ var makeObject;
  * @param {String}
  * @return {Bool}
  */
-var makeObjectReverse;
+var makeObjectReverse = function(str1,str2){
+  var reverse;
+
+  reverse = {[str2]: str1};
+
+  return reverse;
+};
 
 
 
@@ -386,7 +395,9 @@ var makeObjectReverse;
  * @param {Array}
  * @return {Object}
  */
-var tupleToObject;
+var tupleToObject = function(arry){
+  
+};
 
 
 

@@ -426,7 +426,13 @@ var tupleToObjectReverse = function(arry){
  * @param {Array}
  * @return {Object}
  */
-var strToKeys;
+var strToKeys = function(arry){
+  strKey = {};
+
+  for( var i = 0; i<arry.length; i++){
+      strKey[arry[i]] = 0;
+  } return strKey;
+};
 
 
 

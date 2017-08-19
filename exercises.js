@@ -297,16 +297,18 @@ var sumAllPositive = function (str){
  * @return {Number}
  */
 
-// var stringCountBelowThree = function(arry){
-  
-//   belowThree = 0;
+var stringCountBelowThree = function(arry){
+    
+    var belowThree =0;
 
-//   for(i=0; i<arry.length; i++){
-//     if(arry[i] <=3){
-//       belowThree = arry;
-//   }  
-//  } return belowThree;
-// };    
+  for(var i=0; i<arry.length; i++){
+    
+    if(arry[i].length <=3) {
+      belowThree += 1;
+  }  
+ } 
+ return belowThree;
+};    
   
 
 
@@ -320,7 +322,9 @@ var sumAllPositive = function (str){
  * @return {Number}
  */
 
-var countObjects;
+var countObjects = function(){
+  
+};
 
 
 

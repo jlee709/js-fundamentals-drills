@@ -475,7 +475,20 @@ var getKeys = function(obj){
  * @param {Object}
  * @return {Array}
  */
-var objectToArray;
+var objectToArray = function(obj){
+  var objArry = [];
+  var objKeys = Object.keys(obj);
+  var objValues = Object.values(obj);
+
+  for ( var i=0; i<objValues.length; i++){
+    newObjArry = [];
+    newObjArry[0] = objKeys[i];
+    newObjArry[1] = objValues[i];
+
+    objArry.push(newObjArry);
+  }  
+    return objArry;
+};
 
 
 

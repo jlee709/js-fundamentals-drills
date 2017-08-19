@@ -536,7 +536,22 @@ var arraysToObject = function(arry1,arry2){
  * @param {Object}
  * @return {Array}
  */
-var objectsToTuples;
+var objectsToTuples = function (obj1, obj2) {
+  
+  var results = [];
+  var keys = Object.keys(obj1).concat(Object.keys(obj2));
+  var values = Object.values(obj1).concat(Object.values(obj2));
+
+  for (var i = 0; i < values.length; i++) {
+    var tempArray = [];
+      tempArray[0] = keys[i];
+      tempArray[1] = values[i];
+
+    results.push(tempArray);
+  }
+
+  return results;
+};
 
 
 
@@ -547,7 +562,9 @@ var objectsToTuples;
  * @param {Array}
  * @return {Object}
  */
-var mapArrayValues;
+var mapArrayValues = function(){
+
+};
 
 
 

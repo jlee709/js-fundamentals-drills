@@ -322,8 +322,9 @@ var stringCountBelowThree = function(arry){
  * @return {Number}
  */
 
-var countObjects = function(){
-  
+var countObjects = function(arry){
+    var objCount = arry.length;
+    return objCount;
 };
 
 

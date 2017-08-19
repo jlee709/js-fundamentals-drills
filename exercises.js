@@ -69,7 +69,13 @@ var arrayLength = function(str){
  * @param {Array}
  * @return {Number}
  */
-var countAll;
+
+var countAll = function(arr){
+  var number = 0;
+  for(i=0;i<arr.length; i++){
+    number += arr[i];
+  } return number;
+};
 
 
 
@@ -79,19 +85,30 @@ var countAll;
  *
  * @param {Array}
  * @return {Array}
- */
-var countStrings;
+ * make array for this one*/
+
+var countStrings = function(arry){
+   strArry = [];
+
+   for (i=0; i<arry.length; i++){
+    strArry.push(arry[i].length);
+   } 
+      return strArry;
+};
 
 
 
 /* #countAllStrings
  *
- * Takes in an array of strings and returns the sum of all string lengths.
+ * Takes in an array of strings and returns the sum of all string lengths XXX.
  *
  * @param {String}
  * @return {Number}
  */
-var countAllStrings;
+var countAllStrings = function(arr) {
+
+  return(countAll(countStrings(arr)));
+};
 
 
 
@@ -102,7 +119,12 @@ var countAllStrings;
  * @param {Object}
  * @return {Array}
  */
-var convertToArray;
+
+  var convertToArray = function (obj) {
+  var converted = Object.values(obj);
+  return converted;
+  };
+
 
 
 
@@ -113,7 +135,9 @@ var convertToArray;
  * @param {Object}
  * @return {Number}
  */
-var objectSize;
+var objectSize = function(obj){
+  return convertToArray(obj).length;
+};
 
 
 
@@ -124,7 +148,12 @@ var objectSize;
  * @param {Number}
  * @return {Zero}
  */
-var createZeroFilledArray;
+var createZeroFilledArray = function(num){
+  zeroArry = [];
+  for (i=0; i<num; i++){
+    zeroArry.push(0);
+  } return zeroArry;
+};
 
 
 
@@ -135,7 +164,10 @@ var createZeroFilledArray;
  * @param {Array}
  * @return {Array}
  */
-var poppedArray;
+var poppedArray = function(arry){
+  arry.pop();
+  return arry;
+};
 
 
 
@@ -146,7 +178,10 @@ var poppedArray;
  * @param {String}
  * @return {Array}
  */
-var splitString;
+var splitString = function(str){
+  split = str.split('');
+  return split;
+};
 
 
 
@@ -157,7 +192,10 @@ var splitString;
  * @param {String}
  * @return {Number}
  */
-var lengthOfLast;
+var lengthOfLast = function(str){
+  lastLength = str.pop().length;
+  return lastLength;
+};
 
 
 
@@ -478,7 +516,7 @@ module.exports = {
   countAll: countAll,
   countStrings: countStrings,
   countAllStrings: countAllStrings,
-  convertToArray:   convertToArray,
+  convertToArray: convertToArray,
   objectSize: objectSize,
   createZeroFilledArray:   createZeroFilledArray,
   poppedArray:  poppedArray,

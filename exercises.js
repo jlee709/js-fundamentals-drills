@@ -337,7 +337,7 @@ var countObjects = function(arry){
  * @return {Array}
  */
 var getObjectKeys = function(obj){
-  return getKeys(obj);
+  return Object.keys(obj);
 };
 
 

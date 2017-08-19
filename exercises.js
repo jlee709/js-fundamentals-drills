@@ -443,7 +443,12 @@ var strToKeys = function(arry){
  * @param {Object}
  * @return {Array}
  */
-var getValues;
+var getValues = function(obj){
+  
+  values = Object.values(obj);
+
+  return values;
+};
 
 
 

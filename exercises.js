@@ -500,7 +500,13 @@ var objectToArray = function(obj){
  * @param {Array}
  * @return {Object}
  */
-var arrayToObject;
+var arrayToObject = function(arry){
+    var arryObj = {};
+
+    for(var i=0; i<arry.length; i++){
+      arryObj[arry[i]] = false;
+    } return arryObj;
+};
 
 
 
@@ -513,7 +519,9 @@ var arrayToObject;
  * @param {Array}
  * @return {Object}
  */
-var arraysToObject;
+var arraysToObject = function(){
+
+};
 
 
 

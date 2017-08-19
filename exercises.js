@@ -645,7 +645,13 @@ var stringToKeys = function(str){
  * @param {Array}
  * @return {Object}
  */
-var charCountMap;
+var charCountMap = function(arry){
+    output =  {};
+
+    for (var i=0; i<arry.length; i++){
+      output[arry[i]] = arry[i].length;
+    } return output;
+};
 
 
 

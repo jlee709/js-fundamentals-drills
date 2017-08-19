@@ -562,8 +562,12 @@ var objectsToTuples = function (obj1, obj2) {
  * @param {Array}
  * @return {Object}
  */
-var mapArrayValues = function(){
+var mapArrayValues = function(arry){
+    var mapValues = {};
 
+    for(var i=0; i<arry.length; i++){
+      mapValues[arry[i]] = true;
+    } return mapValues;
 };
 
 

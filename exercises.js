@@ -279,18 +279,14 @@ var getKeys = function(obj){
  * @param {String}
  * @return {Number}
  */
-// var sumAllPositive = function (str){
-//   var num = 0;
-
-//   for (i=0; i<atr.length; i++){
-//     if (str[i] < 0){
-//       return null;
-//     }else{
-//       num += str[i];
-//     }
-//   }return num;
-// };
-
+var sumAllPositive = function (str){
+    num = 0;
+    for(i = 0; i<str.length; i++){
+      if (str[i] > 0){
+        num += str[i];
+      }
+    } return num;
+  };
 
 
 /* #stringCountBelowThree
@@ -300,7 +296,19 @@ var getKeys = function(obj){
  * @param {Array}
  * @return {Number}
  */
-var stringCountBelowThree;
+
+// var stringCountBelowThree = function(arry){
+  
+//   belowThree = 0;
+
+//   for(i=0; i<arry.length; i++){
+//     if(arry[i] <=3){
+//       belowThree = arry;
+//   }  
+//  } return belowThree;
+// };    
+  
+
 
 
 

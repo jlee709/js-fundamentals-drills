@@ -267,10 +267,10 @@ var multiplyAll = function(arry){
  * @param {Object}
  * @return {Array}
  */
-// var getKeys = function(obj){
-//   var keys = Object.keys(obj);
-//   return keys;
-// };
+var getKeys = function(obj){
+  var keys = Object.keys(obj);
+  return keys;
+};
 
 /* #sumAllPositive
  *

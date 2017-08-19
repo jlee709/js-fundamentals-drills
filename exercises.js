@@ -181,10 +181,10 @@ var poppedArray = function(arry){
  * @return {Array}
  */
 
-// var splitString = function(str){
-//   split = str.split('');
-//   return split;
-// };
+var splitString = function(str){
+  split = str.split('');
+  return split;
+};
 
 
 

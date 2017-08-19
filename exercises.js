@@ -581,7 +581,17 @@ var mapArrayValues = function(arry){
  * @param {Array}
  * @return {Object}
  */
-var mapStringCounts;
+var mapStringCounts = function(arry){
+    var mapCounts = {};
+
+    for(var i=0; i<arry.length; i++){
+      if(arry[i].length >= 5){
+        mapCounts[arry[i]] = true;
+      } else{
+        mapCounts[arry[i]] = false;
+      }
+    } return mapCounts;
+};
 
 
 

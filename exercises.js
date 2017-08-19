@@ -396,7 +396,9 @@ var makeObjectReverse = function(str1,str2){
  * @return {Object}
  */
 var tupleToObject = function(arry){
-  
+    var toop = {[arry[0]]:arry[1]};
+
+    return toop;
 };
 
 

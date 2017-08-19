@@ -459,7 +459,11 @@ var getValues = function(obj){
  * @param {Object}
  * @return {Array}
  */
-var getKeys;
+var getKeys = function(obj){
+  keyArry = Object.keys(obj);
+
+  return keyArry;
+};
 
 
 

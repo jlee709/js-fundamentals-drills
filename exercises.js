@@ -251,7 +251,12 @@ var moreThanTenLetters = function(str){
  * @param {Array}
  * @return {Number}
  */
-var multiplyAll;
+var multiplyAll = function(arry){
+    var result = 1;
+    for(i=0; i<arry.length; i++){
+      result *= arry[i];
+    } return result;
+};
 
 
 
@@ -262,7 +267,10 @@ var multiplyAll;
  * @param {Object}
  * @return {Array}
  */
-var getKeys;
+// var getKeys = function(obj){
+//   var keys = Object.keys(obj);
+//   return keys;
+// };
 
 /* #sumAllPositive
  *
@@ -271,7 +279,17 @@ var getKeys;
  * @param {String}
  * @return {Number}
  */
-var sumAllPositive;
+// var sumAllPositive = function (str){
+//   var num = 0;
+
+//   for (i=0; i<atr.length; i++){
+//     if (str[i] < 0){
+//       return null;
+//     }else{
+//       num += str[i];
+//     }
+//   }return num;
+// };
 
 
 

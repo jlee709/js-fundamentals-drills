@@ -165,7 +165,7 @@ var createZeroFilledArray = function(num){
  * @return {Array}
  */
 
- 
+
 var poppedArray = function(arry){
   arry.pop();
   return arry;
@@ -196,10 +196,10 @@ var splitString = function(str){
  * @return {Number}
  */
 
-// var lengthOfLast = function(str){
-//   lastLength = str.pop().length;
-//   return lastLength;
-// };
+var lengthOfLast = function(str){
+  lastLength = str.pop().length;
+  return lastLength;
+};
 
 
 

@@ -105,10 +105,10 @@ var countStrings = function(arry){
  * @param {String}
  * @return {Number}
  */
-// var countAllStrings = function(arr) {
+var countAllStrings = function(arr) {
 
-//   return(countAll(countStrings(arr)));
-// };
+  return(countAll(countStrings(arr)));
+};
 
 
 
